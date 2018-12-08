@@ -2,7 +2,7 @@
 title: お家の状況監視システムを作ろう！！
 date: 2018-12-08 23:43:55
 description: "我が家ではお家の状況をいつでもどこでも見たり、操作できるような**お家の状況監視システム**を完成させるべく日々お家ハックに勤しんでおります。そんな中で作ったものを今回はご紹介します。"
-image: "https://i.imgur.com/qeKTrnD.jpg"
+image: "https://imgur.com/gallery/rFGxW"
 slug: forth
 ---
 ## お家の状況監視システムを作ろう！！
