@@ -1,4 +1,10 @@
-## Docker で Elasticsearch と Kibana を起動して elasticsearch-sudachi を入れる
+---
+title: "Docker で Elasticsearch と Kibana を起動して elasticsearch-sudachi を入れる"
+date: 2019-01-02 11:43:55
+description: "elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。"
+image: "https://4.bp.blogspot.com/-P1l2o2XZLeo/V8PYwYbIVRI/AAAAAAAA9UI/XvDaA3e0NYcwM6tuUVsGPaPDQF9TUlfHwCLcB/s800/window_amado_open.png"
+slug: five
+---
 
 elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。
 

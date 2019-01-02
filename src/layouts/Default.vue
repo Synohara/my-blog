@@ -32,7 +32,7 @@ export default {
   }
 
   a {
-    color: #4dba87;
+    color: #fdb097;
     text-decoration: none;
   }
 
@@ -61,7 +61,7 @@ export default {
   }
 
   .layout {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
