@@ -67,7 +67,7 @@ $ docker run -d \
 
 ##### elasticsearch-sudachi動作確認
 `curl -XGET 'localhost:9200/_analyze?pretty' -H 'Content-Type: application/json' -d '{"analyzer" : "sudachi" , "text" :"すもももももももものうち"}'`
-
+うまくいけばこんな結果が返ってきます。
 ```json
 {
   "tokens" : [
