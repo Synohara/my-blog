@@ -1,10 +1,3 @@
----
-title: "Docker で Elasticsearch と Kibana を起動して elasticsearch-sudachi を入れる"
-description: "elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。"
-image: "https://4.bp.blogspot.com/-P1l2o2XZLeo/V8PYwYbIVRI/AAAAAAAA9UI/XvDaA3e0NYcwM6tuUVsGPaPDQF9TUlfHwCLcB/s800/window_amado_open.png"
-slug: five
----
-
 elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。
 
 ### Elasticsearch と Kibana を導入
@@ -66,36 +59,38 @@ $ docker run -d \
 
 `$ bin/elasticsearch-plugin install file:///usr/share/elasticsearch/analysis-sudachi-elasticsearch${Version}-SNAPSHOT.zip`
 
-[system_full.dic](https://oss.sonatype.org/content/repositories/snapshots/com/worksap/nlp/sudachi/0.1.1-SNAPSHOT/)をダウンロードして/usr/share/elasticsearch/config/sudachiにコピー
+[system_full.dic](https://oss.sonatype.org/content/repositories/snapshots/com/worksap/nlp/sudachi/0.1.1-SNAPSHOT/)をダウンロードして/usr/share/elasticsearch/config/sudachi にコピー
 
-ここまできたらElasticsearchコンテナを再起動します。
+ここまできたら Elasticsearch コンテナを再起動します。
 
-##### elasticsearch-sudachi動作確認
+##### elasticsearch-sudachi 動作確認
+
 `curl -XGET 'localhost:9200/_analyze?pretty' -H 'Content-Type: application/json' -d '{"analyzer" : "sudachi" , "text" :"すもももももももものうち"}'`
 うまくいけばこんな結果が返ってきます。
+
 ```json
 {
-  "tokens" : [
+  "tokens": [
     {
-      "token" : "すもも",
-      "start_offset" : 0,
-      "end_offset" : 3,
-      "type" : "word",
-      "position" : 0
+      "token": "すもも",
+      "start_offset": 0,
+      "end_offset": 3,
+      "type": "word",
+      "position": 0
     },
     {
-      "token" : "もも",
-      "start_offset" : 4,
-      "end_offset" : 6,
-      "type" : "word",
-      "position" : 2
+      "token": "もも",
+      "start_offset": 4,
+      "end_offset": 6,
+      "type": "word",
+      "position": 2
     },
     {
-      "token" : "もも",
-      "start_offset" : 7,
-      "end_offset" : 9,
-      "type" : "word",
-      "position" : 4
+      "token": "もも",
+      "start_offset": 7,
+      "end_offset": 9,
+      "type": "word",
+      "position": 4
     }
   ]
 }
