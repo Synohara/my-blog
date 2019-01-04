@@ -1,5 +1,8 @@
-elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。
-
+---
+title: elasticsearch-sudachi
+description: "elasticsearch-sudachi をローカル環境で試してみたかったので Docker でサクッと Elasticsearch と Kibana を起動してみました。"
+slug: five
+---
 ### Elasticsearch と Kibana を導入
 
 Docker でサクッと起動しましょう。mac の場合は Docker for Mac で。

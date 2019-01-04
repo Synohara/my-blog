@@ -7,8 +7,9 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/cli": "0.0.7",
     "@gridsome/source-filesystem": "^0.1.0",
-    "@gridsome/transformer-remark": "0.1.0",
-    "gridsome": "^0.2.5"
+    "@gridsome/transformer-remark": "^0.1.0",
+    "gridsome": "^0.4.0"
   }
 }
